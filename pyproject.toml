@@ -62,4 +62,4 @@ include = ["data_provider*", "exp*", "layers*", "models*", "utils*", "tslib_wrap
 exclude = ["scripts*", "tutorial*", "pic*", "dataset*", "data*"]
 
 [tool.setuptools.package-data]
-"" = ["README.md", "LICENSE"]
+"*" = ["README.md", "LICENSE"]
