@@ -5,6 +5,8 @@ TSLib is an open-source library for deep learning researchers, especially for de
 
 We provide a neat code base to evaluate advanced deep time series models or develop your model, which covers five mainstream tasks: **long- and short-term forecasting, imputation, anomaly detection, and classification.**
 
+:triangular_flag_on_post:**News** (2026.04) Due to the limited bandwidth of the current maintainers, we will not be actively adding new features to this library. Since the library was originally released three years ago, many of its benchmarks may no longer be meaningful for evaluating the effectiveness or progress of current research. However, the baseline implementations remain correct. We therefore recommend seeking out newer benchmarks.
+
 :triangular_flag_on_post:**News** (2025.12) Many thanks to the great work from [ailuntz](https://github.com/thuml/Time-Series-Library/pull/805), which provides an updated requirements and docker deployment, as well as a well-organized document. This is quite meaningful to this project and beginners.
 
 :triangular_flag_on_post:**News** (2025.11) Considering the rapid development of Large Time Series Models (LTSMs), we have newly added a [[zero-shot forecasting]](https://github.com/thuml/Time-Series-Library/blob/main/exp/exp_zero_shot_forecasting.py) feature in TSLib. You can try [this script](https://github.com/thuml/Time-Series-Library/blob/main/scripts/long_term_forecast/ETT_script/LTSM.sh) to evaluate LTSMs.
@@ -61,6 +63,7 @@ Till March 2024, the top three models for five different tasks are:
 See our latest paper [[TimesNet]](https://arxiv.org/abs/2210.02186) for the comprehensive benchmark. We will release a real-time updated online version soon.
 
 **Newly added baselines.** We will add them to the leaderboard after a comprehensive evaluation.
+  - [x] **MambaSL** - MambaSL: Exploring Single-Layer Mamba for Time Series Classification [[ICLR 2026]](https://openreview.net/forum?id=YDl4vqQqGP) [[Code]](https://github.com/thuml/Time-Series-Library/blob/main/models/MambaSingleLayer.py)
   - [x] **TimeFilter** - TimeFilter: Patch-Specific Spatial-Temporal Graph Filtration for Time Series Forecasting [[ICML 2025]](https://arxiv.org/abs/2501.13041) [[Code]](https://github.com/thuml/Time-Series-Library/blob/main/models/TimeFilter.py)
   - [x] **KAN-AD** - KAN-AD: Time Series Anomaly Detection with Kolmogorov-Arnold Networks [[ICML 2025]](https://arxiv.org/abs/2411.00278) [[Code]](https://github.com/thuml/Time-Series-Library/blob/main/models/KANAD.py)
   - [x] **MultiPatchFormer** - A multiscale model for multivariate time series forecasting [[Scientific Reports 2025]](https://www.nature.com/articles/s41598-024-82417-4) [[Code]](https://github.com/thuml/Time-Series-Library/blob/main/models/MultiPatchFormer.py)
